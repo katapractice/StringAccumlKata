@@ -6,7 +6,8 @@ public class Controller
 	
 	public void start()
 	{
-		 accumulate("ZpglnRxqenU");
+//		 accumulate("ZpglnRxqenU");
+		System.out.println(charArrayVersion("ZpglnRxqenU"));
 	}
 	
 	
@@ -36,10 +37,41 @@ public class Controller
 			}
 			
 			
-			
 			i++;
 		}
 		
 		return returnString;
 	}
+	
+	private String charArrayVersion(String s)
+	{
+		String stringToReturn = "";
+		
+		char[] sArray = s.toCharArray();
+		
+		int i = 0;
+		while(i < sArray.length)
+		{
+			int z = 0;
+			while(z < i + 1)
+			{
+				stringToReturn = stringToReturn.concat(String.valueOf(s.charAt(i)));
+				z++;
+			}
+			
+			
+			if(z != s.length())
+			{
+				stringToReturn = stringToReturn.concat("-");
+			}
+			
+			i++;
+		}
+		
+		
+		return stringToReturn;
+	}
+	
+	
+	
 }
