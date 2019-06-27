@@ -6,7 +6,7 @@ public class Controller
 	
 	public void start()
 	{
-		 System.out.println(accumulate("abcd"));
+		 accumulate("ZpglnRxqenU");
 	}
 	
 	
@@ -23,10 +23,18 @@ public class Controller
 			int z = 0;
 			while(z < indexChar + 1)
 			{
-				returnString = returnString.concat(String.valueOf(s.charAt(i)));
+				System.out.println("The index is " + (indexChar + 1) + " z is " + z + " " + returnString.concat(String.valueOf(s.charAt(i))));
 				z++;
 			}
-			returnString.concat("-");
+			if(z == s.length())
+			{
+				
+			}
+			else
+			{
+//				returnString = returnString.concat("-");
+			}
+			
 			
 			
 			i++;
